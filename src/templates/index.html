@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <title>Flask ToDo List App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h1>Flask ToDo List App</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group mb-3">
+                <input id="task-input-text" type="text" class="form-control" placeholder="Task title">
+                <button id="task-input-button" class="btn btn-outline-secondary" type="button">Add task</button>
+            </div>
+
+            <div id="task-list"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.js' )}}"></script>
+    <script src="{{ url_for('static', filename='js/script.js' )}}"></script>
+</body>
+</html>
